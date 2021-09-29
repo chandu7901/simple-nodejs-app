@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
    "test": "mocha --reporter list",
-    "build": "node_modules/.bin/rimraf $npm_package_config_distribution",
     "package": "npm pack"
   },
   "author": "Steffy Ann John",
