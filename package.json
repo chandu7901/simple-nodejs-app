@@ -4,7 +4,9 @@
   "description": "for react backend",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "test": "mocha --reporter list",
+    "build": "node_modules/.bin/rimraf $npm_package_config_distribution",
+    "package": "npm pack"
   },
   "author": "Steffy Ann John",
   "license": "MIT",
@@ -19,6 +21,8 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "mocha": "^9.1.2",
+    "three": "^0.132.2"
   }
 }
